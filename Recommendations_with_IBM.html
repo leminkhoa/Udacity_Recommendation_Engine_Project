@@ -15799,16 +15799,16 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&#39;data science for real-time streaming analytics&#39;,
- &#39;pixieapp for outlier detection&#39;,
- &#39;data visualization playbook: telling the data story&#39;,
- &#39;learn basics about notebooks and apache spark&#39;,
+<pre>[&#39;deploy your python model as a restful api&#39;,
+ &#39;dsx: hybrid mode&#39;,
+ &#39;analyze accident reports on amazon emr spark&#39;,
+ &#39;5 practical use cases of social network analytics: going beyond facebook and twitter&#39;,
+ &#39;spark 2.1 and job monitoring available in dsx&#39;,
+ &#39;higher-order logistic regression for large datasets&#39;,
+ &#39;a dynamic duo – inside machine learning – medium&#39;,
  &#39;automating web analytics through python&#39;,
- &#39;markdown for jupyter notebooks cheatsheet&#39;,
- &#39;what is smote in an imbalanced class setting (e.g. fraud detection)?&#39;,
- &#39;recent trends in recommender systems&#39;,
- &#39;visualising data the node.js way&#39;,
- &#39;analyze facebook data using ibm watson and watson studio&#39;]</pre>
+ &#39;analyze facebook data using ibm watson and watson studio&#39;,
+ &#39;from scikit-learn model to cloud with wml client&#39;]</pre>
 </div>
 
 </div>
@@ -16014,10 +16014,10 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>The top 10 recommendations for user 20 are the following article ids:
-[&#39;1276.0&#39;, &#39;164.0&#39;, &#39;1346.0&#39;, &#39;1324.0&#39;, &#39;1330.0&#39;, &#39;1170.0&#39;, &#39;1336.0&#39;, &#39;205.0&#39;, &#39;1424.0&#39;, &#39;142.0&#39;]
+[&#39;1278.0&#39;, &#39;362.0&#39;, &#39;1330.0&#39;, &#39;1162.0&#39;, &#39;1426.0&#39;, &#39;1304.0&#39;, &#39;911.0&#39;, &#39;1351.0&#39;, &#39;1324.0&#39;, &#39;1085.0&#39;]
 
 The top 10 recommendations for user 20 are the following article names:
-[&#39;deploy your python model as a restful api&#39;, &#39;apache spark lab, part 1: basic concepts&#39;, &#39;ibm watson facebook posts for 2015&#39;, &#39;insights from new york car accident reports&#39;, &#39;learn tensorflow and deep learning together and now!&#39;, &#34;a beginner&#39;s guide to variational methods&#34;, &#39;learn basics about notebooks and apache spark&#39;, &#39;neural networks for beginners: popular types and applications&#39;, &#39;use spark for python to load data and run sql queries&#39;, &#39;military expenditure as % of gdp by country&#39;]
+[&#39;dsx: hybrid mode&#39;, &#39;analyze energy consumption in buildings&#39;, &#39;ibm watson facebook posts for 2015&#39;, &#39;gosales transactions for logistic regression model&#39;, &#39;insights from new york car accident reports&#39;, &#39;model bike sharing data with spss&#39;, &#39;using machine learning to predict baseball injuries&#39;, &#39;use spark for scala to load data and run sql queries&#39;, &#39;airbnb data for analytics: chicago listings&#39;, &#39;develop a scala spark model on chicago building violations&#39;]
 </pre>
 </div>
 </div>
@@ -16099,7 +16099,9 @@ The top 10 recommendations for user 20 are the following article names:
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Provide your response here.</strong></p>
+<ul>
+<li>If we were given a new user, then it's not possible to define their historical logs and recommend them the relevant articles.To solve this cold-start problem, a <strong>rank-based</strong> solution is good, which will recommend them articles that are mostly interacted (for example, top 10 articles)</li>
+</ul>
 
 </div>
 </div>
@@ -16483,7 +16485,7 @@ The top 10 recommendations for user 20 are the following article names:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Perform SVD on the User-Item Matrix Here</span>
@@ -16524,7 +16526,10 @@ Article matrix shape:  (714, 714)
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Provide your response here.</strong></p>
+<ul>
+<li>In our lesson, we used FunkSVD, which will be a solution for a matrix with missing values (Happens because users doesn't rate on movie)</li>
+<li>In this case, it is okay to use SVD as we don't have missing value, all cells are filled with either 0 or 1.</li>
+</ul>
 
 </div>
 </div>
@@ -16536,7 +16541,7 @@ Article matrix shape:  (714, 714)
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">num_latent_feats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">700</span><span class="o">+</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
@@ -16609,7 +16614,7 @@ Article matrix shape:  (714, 714)
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_train</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40000</span><span class="p">)</span>
@@ -16690,7 +16695,7 @@ The number of articles we cant make predictions in test set:  0
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;User item train shape: &#39;</span><span class="p">,</span> <span class="n">user_item_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -16727,7 +16732,7 @@ User item test shape:  (20, 574)
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Replace the values in the dictionary below</span>
@@ -16783,7 +16788,7 @@ User item test shape:  (20, 574)
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># fit SVD on the user_item_train matrix</span>
@@ -16798,7 +16803,7 @@ User item test shape:  (20, 574)
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use these cells to see how well you can use the training </span>
@@ -16840,7 +16845,7 @@ Article Test Matrix shape:  (714, 574)
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[82]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">num_latent_feats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">700</span><span class="o">+</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
@@ -16880,7 +16885,7 @@ Article Test Matrix shape:  (714, 574)
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[83]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Visualize results    </span>
@@ -16937,8 +16942,34 @@ Article Test Matrix shape:  (714, 574)
 <ul>
 <li>Our model results is quite good for train set -&gt; as the number of latent features increases, the accuracy also increases.</li>
 <li>However, it is in contrast for test set -&gt; as the number of latent features increases, the accuracy decreases.
--&gt; <strong>Possible roots and solutions</strong>: the way we pick out train and test set might not be random and thus data in train set might not be good enough to predict for test (which we usually call overfit). To avoid this, we can use cross validation to pick out our train data multiple times until it is more representative.</li>
+<br>
+<br>
+=&gt; <b>Possible roots and solutions</b>: the way we pick out train and test set might not be random and thus data in train set might not be good enough to predict for test (which we usually call overfit). To avoid this, we can use cross validation to pick out our train data multiple times until it is more representative.</li>
 </ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Is accuracy a good metric to use here in this case? Does it provide us with a fair assessment of the model's performance?</strong>
+<br>
+=&gt; Accuracy is only evaluated based on the mutual users between train and test set. So what if train dataset has too many users (around 4000 users) and test set only has 20 same users from train set? The imbalanced dataset might make it a little bit unfair to assess the model performance through the accuracy. Another approach is to send an online survey to ask respondents of how our recommendation engine works.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Is the current assessment framework robust enough to make conclusive results about the model? Think about the number of train and test users. How many users exist in your test set for whom you can make predictions? Is it sufficient?</strong>
+<br>
+=&gt; While we have 682 users in test set, we are only able to predict for 20 users within that group. This might not good enough to use only 20 users to represent for your whole model performance. One way to overcome is to pick out the split of train and test in a way that they have as many mutual users as possible</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Can we use an online evaluation technique like A/B testing here? If yes, how will you separate the user groups? Will it be based on userIDs, cookies, devices, IP addresses? How long will we run the experiment? What metrics will be tracked during this experiment?</strong>
+<br>
+=&gt; In this project, we use offline method that calculate the error differences between predicted and actual data. Alternatively, we might apply online A/B testing for users to evaluate our recommendation engines. User groups will be splitted based on cookies with randomness to ensure representative of our evaluation. Using userIDs, devices and IP addresses can lead to bias. For example, splitting based on devices might create two separate groups of users using different devices, these 2 groups might have 2 different point of views about recommendations; thus, randomness might not be ensured.</p>
 
 </div>
 </div>
@@ -16958,7 +16989,7 @@ Article Test Matrix shape:  (714, 574)
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[84]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">call</span>
@@ -16978,7 +17009,7 @@ Article Test Matrix shape:  (714, 574)
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[84]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
 
 
 
